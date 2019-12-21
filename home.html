@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Dokimes</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" type="text/css" href="home.css">
+		<!-- <link rel="stylesheet" type="text/css" href="demo2.css"> -->
+		
+		<style type="text/css">
+
+
+		</style>
+	</head>
+
+	<body onload="init();" style="touch-action:none">
+		<div id="target">
+			Touch and Hold with 2 pointers, then pinch in or out.<br/>
+			The background color will change to pink if the pinch is opening (Zoom In) 
+			or changes to lightblue if the pinch is closing (Zoom out).
+		</div>
+		<!-- UI for logging/debugging -->
+		<button id="log" onclick="enableLog(event);">
+			Start/Stop event logging
+		</button>
+		<button id="clearlog" onclick="clearLog(event);">
+			Clear the log
+		</button>
+		<p></p>
+		<output></output>
+
+		
+  		<script type="text/javascript" src="jquery-3.1.1.js"></script>
+  		<script type="text/javascript" src="home.js"></script>
+  		<script type="text/javascript" src="controls.js"></script>
+	</body>
+</html>
